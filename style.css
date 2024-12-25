@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-top: 90px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.party-button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    /* background: #00ccff; */
+    background: #500073;
+    color: white;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 20px #ffffff;
+    }
+    50% {
+        box-shadow: 0 0 40px #C62300;
+    }
+}
+
+.party-button:hover {
+    background: #ff007f;
+    transform: scale(1.1);
+}
+
+#confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.hidden-message {
+    display: none;
+    font-size: 1.9rem;
+    margin-top: 60px;
+
+}
+
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+.emoji {
+    font-size: 5rem;
+    animation: spin 3s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
